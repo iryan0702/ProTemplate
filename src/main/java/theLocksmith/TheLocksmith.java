@@ -24,10 +24,10 @@ import theLocksmith.relics.TodoItem;
 
 import java.util.ArrayList;
 
-import static theLocksmith.CharacterFile.Enums.LOCKSMITH_COLOR;
-import static theLocksmith.ModFile.*;
+import static theLocksmith.TheLocksmith.Enums.LOCKSMITH_COLOR;
+import static theLocksmith.LocksmithMod.*;
 
-public class CharacterFile extends CustomPlayer {
+public class TheLocksmith extends CustomPlayer {
 
     static final String ID = makeID("ModdedCharacter");
     static final CharacterStrings characterStrings = CardCrawlGame.languagePack.getCharacterString(ID);
@@ -35,7 +35,7 @@ public class CharacterFile extends CustomPlayer {
     static final String[] TEXT = characterStrings.TEXT;
 
 
-    public CharacterFile(String name, PlayerClass setClass) {
+    public TheLocksmith(String name, PlayerClass setClass) {
         super(name, setClass, new CustomEnergyOrb(orbTextures, makeCharacterPath("mainChar/orb/vfx.png"), null), new SpriterAnimation(
                 makeCharacterPath("mainChar/static.scml")));
         initializeClass(null,
@@ -138,7 +138,7 @@ public class CharacterFile extends CustomPlayer {
 
     @Override
     public AbstractPlayer newInstance() {
-        return new CharacterFile(name, chosenClass);
+        return new TheLocksmith(name, chosenClass);
     }
 
     @Override

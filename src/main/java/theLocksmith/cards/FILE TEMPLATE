@@ -2,7 +2,7 @@ Settings -> Editor -> File and Code Templates and add the following!
 
 import theLocksmith.cards.AbstractEasyCard;
 
-import static theLocksmith.ModFile.makeID;
+import static theLocksmith.LocksmithMod.makeID;
 import static theLocksmith.util.Wiz.*;
 
 public class ${NAME} extends AbstractEasyCard {

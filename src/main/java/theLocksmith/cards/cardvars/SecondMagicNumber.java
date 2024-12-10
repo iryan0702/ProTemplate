@@ -3,7 +3,7 @@ package theLocksmith.cards.cardvars;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import theLocksmith.cards.AbstractEasyCard;
 
-import static theLocksmith.ModFile.makeID;
+import static theLocksmith.LocksmithMod.makeID;
 
 public class SecondMagicNumber extends AbstractEasyDynamicVariable {
 

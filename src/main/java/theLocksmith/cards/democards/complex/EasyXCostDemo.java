@@ -7,7 +7,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.StrengthPower;
 
-import static theLocksmith.ModFile.makeID;
+import static theLocksmith.LocksmithMod.makeID;
 import static theLocksmith.util.Wiz.applyToSelfTop;
 import static theLocksmith.util.Wiz.atb;
 

@@ -6,7 +6,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import theLocksmith.cards.AbstractEasyCard;
 
-import static theLocksmith.ModFile.makeID;
+import static theLocksmith.LocksmithMod.makeID;
 import static theLocksmith.util.Wiz.*;
 
 public class DrawAndShiv extends AbstractEasyCard {

@@ -11,7 +11,7 @@ import theLocksmith.cards.EasyModalChoiceCard;
 
 import java.util.ArrayList;
 
-import static theLocksmith.ModFile.makeID;
+import static theLocksmith.LocksmithMod.makeID;
 import static theLocksmith.util.Wiz.*;
 
 public class EasyModalChoiceDemo extends AbstractEasyCard {

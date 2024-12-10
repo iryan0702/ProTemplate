@@ -6,7 +6,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.VulnerablePower;
 import theLocksmith.cards.AbstractEasyCard;
 
-import static theLocksmith.ModFile.makeID;
+import static theLocksmith.LocksmithMod.makeID;
 
 public class TwoTypesOfDamage extends AbstractEasyCard {
     public final static String ID = makeID(TwoTypesOfDamage.class.getSimpleName());

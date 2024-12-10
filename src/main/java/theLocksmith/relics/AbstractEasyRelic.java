@@ -5,8 +5,8 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import theLocksmith.util.TexLoader;
 
-import static theLocksmith.ModFile.makeRelicPath;
-import static theLocksmith.ModFile.modID;
+import static theLocksmith.LocksmithMod.makeRelicPath;
+import static theLocksmith.LocksmithMod.modID;
 
 public abstract class AbstractEasyRelic extends CustomRelic {
     public AbstractCard.CardColor color;

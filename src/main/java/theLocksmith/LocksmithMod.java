@@ -30,7 +30,7 @@ import java.nio.charset.StandardCharsets;
 
 @SuppressWarnings({"unused", "WeakerAccess"})
 @SpireInitializer
-public class ModFile implements
+public class LocksmithMod implements
         EditCardsSubscriber,
         EditRelicsSubscriber,
         EditStringsSubscriber,
@@ -74,10 +74,10 @@ public class ModFile implements
         return "eng";
     }
 
-    public ModFile() {
+    public LocksmithMod() {
         BaseMod.subscribe(this);
 
-        BaseMod.addColor(CharacterFile.Enums.LOCKSMITH_COLOR, characterColor, characterColor, characterColor,
+        BaseMod.addColor(TheLocksmith.Enums.LOCKSMITH_COLOR, characterColor, characterColor, characterColor,
                 characterColor, characterColor, characterColor, characterColor,
                 ATTACK_S_ART, SKILL_S_ART, POWER_S_ART, CARD_ENERGY_S,
                 ATTACK_L_ART, SKILL_L_ART, POWER_L_ART,
@@ -110,13 +110,13 @@ public class ModFile implements
     }
 
     public static void initialize() {
-        ModFile thismod = new ModFile();
+        LocksmithMod thismod = new LocksmithMod();
     }
 
     @Override
     public void receiveEditCharacters() {
-        BaseMod.addCharacter(new CharacterFile(CharacterFile.characterStrings.NAMES[1], CharacterFile.Enums.THE_LOCKSMITH),
-            CHARSELECT_BUTTON, CHARSELECT_PORTRAIT, CharacterFile.Enums.THE_LOCKSMITH);
+        BaseMod.addCharacter(new TheLocksmith(TheLocksmith.characterStrings.NAMES[1], TheLocksmith.Enums.THE_LOCKSMITH),
+            CHARSELECT_BUTTON, CHARSELECT_PORTRAIT, TheLocksmith.Enums.THE_LOCKSMITH);
         
         new AutoAdd(modID)
             .packageFilter(AbstractEasyPotion.class)

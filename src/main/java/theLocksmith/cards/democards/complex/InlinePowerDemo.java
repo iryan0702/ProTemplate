@@ -9,7 +9,7 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 import theLocksmith.cards.AbstractEasyCard;
 import theLocksmith.powers.LambdaPower;
 
-import static theLocksmith.ModFile.makeID;
+import static theLocksmith.LocksmithMod.makeID;
 import static theLocksmith.util.Wiz.applyToSelf;
 import static theLocksmith.util.Wiz.atb;
 

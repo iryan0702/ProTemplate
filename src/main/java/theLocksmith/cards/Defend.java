@@ -3,7 +3,7 @@ package theLocksmith.cards;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
-import static theLocksmith.ModFile.makeID;
+import static theLocksmith.LocksmithMod.makeID;
 
 public class Defend extends AbstractEasyCard {
     public final static String ID = makeID("Defend");
