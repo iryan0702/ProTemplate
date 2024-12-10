@@ -41,7 +41,7 @@ public class LocksmithMod implements
         RenderSubscriber,
         AddAudioSubscriber {
 
-    public static final String modID = "thelocksmith"; //TODO: Change this.
+    public static final String modID = "thelocksmith";
 
     public static String makeID(String idText) {
         return modID + ":" + idText;
