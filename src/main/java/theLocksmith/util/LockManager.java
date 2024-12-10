@@ -3,6 +3,7 @@ package theLocksmith.util;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.helpers.TipHelper;
+import theLocksmith.LocksmithMod;
 
 import java.util.logging.Logger;
 
@@ -13,36 +14,40 @@ public class LockManager {
     public int lock7 = 1;
 
     public boolean pickLock(int targetLock){
-        boolean success = false;
+        boolean success = isLockActive(targetLock);
         switch (targetLock) {
             case 2:
-                if(lock2 % 2 == 0){
-                    success = true;
-                    lock2 = (lock2%210+1);
-                }
+                lock2 = (lock2%210+1);
                 break;
             case 3:
-                if(lock3 % 3 == 0){
-                    success = true;
-                    lock3 = (lock3%210+1);
-                }
+                lock3 = (lock3%210+1);
                 break;
             case 5:
-                if(lock5 % 5 == 0){
-                    success = true;
-                    lock5 = (lock5%210+1);
-                }
+                lock5 = (lock5%210+1);
                 break;
             case 7:
-                if(lock7 % 7 == 0){
-                    success = true;
-                    lock7 = (lock7%210+1);
-                }
+                lock7 = (lock7%210+1);
                 break;
             default:
                 break;
         }
         return success;
+    }
+
+    public boolean isLockActive(int targetLock){
+        switch (targetLock) {
+            case 2:
+                return lock2 % 2 == 0;
+            case 3:
+                return lock3 % 3 == 0;
+            case 5:
+                return lock5 % 5 == 0;
+            case 7:
+                return lock7 % 7 == 0;
+            default:
+                break;
+        }
+        return false;
     }
 
     public void render(SpriteBatch sb){

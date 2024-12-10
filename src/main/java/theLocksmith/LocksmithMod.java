@@ -22,6 +22,8 @@ import com.megacrit.cardcrawl.localization.RelicStrings;
 import com.megacrit.cardcrawl.localization.StanceStrings;
 import com.megacrit.cardcrawl.localization.UIStrings;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import theLocksmith.cards.AbstractEasyCard;
 import theLocksmith.cards.cardvars.AbstractEasyDynamicVariable;
 import theLocksmith.potions.AbstractEasyPotion;
@@ -42,6 +44,7 @@ public class LocksmithMod implements
         AddAudioSubscriber {
 
     public static final String modID = "thelocksmith";
+    public static final Logger logger = LogManager.getLogger(modID);
 
     public static String makeID(String idText) {
         return modID + ":" + idText;

@@ -1,11 +1,11 @@
 {
   "${ModID}:Strike": {
     "NAME": "Strike",
-    "DESCRIPTION": "Deal !D! damage."
+    "DESCRIPTION": "Deal !D! damage. NL ${ModID}:Pick 2: NL Deal !D! damage."
   },
-  "${ModID}:Defend": {
-    "NAME": "Defend",
-    "DESCRIPTION": "Gain !B! Block."
+  "${ModID}:Defend2": {
+    "NAME": "Defend 2",
+    "DESCRIPTION": "Gain !B! Block. NL ${ModID}:Pick 2."
   },
   "${ModID}:ExampleTwoAmountPowerCard": {
     "NAME": "Two Amount Power",
