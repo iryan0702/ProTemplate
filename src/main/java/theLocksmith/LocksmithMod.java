@@ -7,6 +7,7 @@ import basemod.helpers.RelicType;
 import basemod.interfaces.*;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
+import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.MathUtils;
 import com.evacipated.cardcrawl.mod.stslib.Keyword;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
@@ -25,6 +26,7 @@ import theLocksmith.cards.AbstractEasyCard;
 import theLocksmith.cards.cardvars.AbstractEasyDynamicVariable;
 import theLocksmith.potions.AbstractEasyPotion;
 import theLocksmith.relics.AbstractEasyRelic;
+import theLocksmith.util.LockManager;
 import theLocksmith.util.ProAudio;
 import java.nio.charset.StandardCharsets;
 
@@ -36,6 +38,7 @@ public class LocksmithMod implements
         EditStringsSubscriber,
         EditKeywordsSubscriber,
         EditCharactersSubscriber,
+        RenderSubscriber,
         AddAudioSubscriber {
 
     public static final String modID = "thelocksmith"; //TODO: Change this.
@@ -185,5 +188,11 @@ public class LocksmithMod implements
                 BaseMod.addKeyword(modID, keyword.PROPER_NAME, keyword.NAMES, keyword.DESCRIPTION);
             }
         }
+    }
+
+    public static LockManager lockManager = new LockManager();
+    @Override
+    public void receiveRender(SpriteBatch sb) {
+        lockManager.render(sb);
     }
 }
