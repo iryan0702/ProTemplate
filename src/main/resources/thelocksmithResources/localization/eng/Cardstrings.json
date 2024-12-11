@@ -7,6 +7,18 @@
     "NAME": "Defend 2",
     "DESCRIPTION": "Gain !B! Block. NL ${ModID}:Pick 2."
   },
+  "${ModID}:Defend3": {
+    "NAME": "Defend 3",
+    "DESCRIPTION": "Gain !B! Block. NL ${ModID}:Pick 3."
+  },
+  "${ModID}:Defend5": {
+    "NAME": "Defend 5",
+    "DESCRIPTION": "Gain !B! Block. NL ${ModID}:Pick 5."
+  },
+  "${ModID}:Defend7": {
+    "NAME": "Defend 7",
+    "DESCRIPTION": "Gain !B! Block. NL ${ModID}:Pick 7."
+  },
   "${ModID}:ExampleTwoAmountPowerCard": {
     "NAME": "Two Amount Power",
     "DESCRIPTION": "At the start of your turn, gain !M! Strength and !${ModID}:m2! Dexterity."
