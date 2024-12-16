@@ -19,6 +19,15 @@
     "NAME": "Defend 7",
     "DESCRIPTION": "Gain !B! Block. NL ${ModID}:Pick 7."
   },
+  "${ModID}:BruteForce": {
+    "NAME": "Brute Force",
+    "DESCRIPTION": "Lock 3: Gain !M! Vigor. NL When this is drawn, ${ModID}:Pick random.",
+    "EXTENDED_DESCRIPTION": [
+      "Locked Vigor",
+      "After activating #yLock #b3, gain #b",
+      " #yVigor."
+    ]
+  },
   "${ModID}:ExampleTwoAmountPowerCard": {
     "NAME": "Two Amount Power",
     "DESCRIPTION": "At the start of your turn, gain !M! Strength and !${ModID}:m2! Dexterity."
