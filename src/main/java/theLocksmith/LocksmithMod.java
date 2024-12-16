@@ -10,6 +10,7 @@ import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.MathUtils;
 import com.evacipated.cardcrawl.mod.stslib.Keyword;
+import com.evacipated.cardcrawl.mod.stslib.patches.CustomTargeting;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.google.gson.Gson;
 import com.megacrit.cardcrawl.core.Settings;
@@ -29,12 +30,14 @@ import theLocksmith.cards.cardvars.AbstractEasyDynamicVariable;
 import theLocksmith.potions.AbstractEasyPotion;
 import theLocksmith.relics.AbstractEasyRelic;
 import theLocksmith.util.LockManager;
+import theLocksmith.util.LockTargeting;
 import theLocksmith.util.ProAudio;
 import java.nio.charset.StandardCharsets;
 
 @SuppressWarnings({"unused", "WeakerAccess"})
 @SpireInitializer
 public class LocksmithMod implements
+        PostInitializeSubscriber,
         EditCardsSubscriber,
         EditRelicsSubscriber,
         EditStringsSubscriber,
@@ -197,5 +200,10 @@ public class LocksmithMod implements
     @Override
     public void receiveRender(SpriteBatch sb) {
         lockManager.render(sb);
+    }
+
+    @Override
+    public void receivePostInitialize() {
+        CustomTargeting.registerCustomTargeting(LockTargeting.LOCK_TARGET, new LockTargeting());
     }
 }

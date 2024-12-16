@@ -50,6 +50,41 @@ public class LockManager {
         return false;
     }
 
+    public int getLock(int targetLock){
+        switch (targetLock) {
+            case 2:
+                return lock2;
+            case 3:
+                return lock3;
+            case 5:
+                return lock5;
+            case 7:
+                return lock7;
+            default:
+                break;
+        }
+        return -1;
+    }
+
+    public void setLock(int targetLock, int value){
+        switch (targetLock) {
+            case 2:
+                lock2 = value;
+                break;
+            case 3:
+                lock3 = value;
+                break;
+            case 5:
+                lock5 = value;
+                break;
+            case 7:
+                lock7 = value;
+                break;
+            default:
+                break;
+        }
+    }
+
     public void render(SpriteBatch sb){
         StringBuilder renderStr = new StringBuilder();
 

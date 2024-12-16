@@ -66,6 +66,7 @@ public class TheLocksmith extends CustomPlayer {
         retVal.add(Defend5.ID);
         retVal.add(Defend7.ID);
         retVal.add(BruteForce.ID);
+        retVal.add(CrypticHeirloom.ID);
         return retVal;
     }
 

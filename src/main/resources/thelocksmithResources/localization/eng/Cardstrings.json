@@ -28,6 +28,11 @@
       " #yVigor."
     ]
   },
+  "${ModID}:CrypticHeirloom": {
+    "NAME": "Cryptic Heirloom",
+    "DESCRIPTION": "Innate. Retain. NL Swap the value of two Locks. NL !M!, !${ModID}:m2!"
+  },
+
   "${ModID}:ExampleTwoAmountPowerCard": {
     "NAME": "Two Amount Power",
     "DESCRIPTION": "At the start of your turn, gain !M! Strength and !${ModID}:m2! Dexterity."
